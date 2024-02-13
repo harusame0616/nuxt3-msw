@@ -1,5 +1,5 @@
 import { worker } from "~/mocks/browser";
 
-export default defineNuxtPlugin(() => {
-  worker.start();
+export default defineNuxtPlugin(async () => {
+  await worker.start();
 });
